@@ -33,7 +33,7 @@ export default function Footer() {
               <li>Cra 22 # 51-32 Bucaramanga - Colombia</li>
               <li>+57 315 341 1850 - +57 350 471 7130</li>
               <li>cgIngenieria0@gmail.com</li>
-              <li>www.g-c-ingenieria.vercel.app</li>  
+              <li>https://g-c-ingenieria.vercel.app</li>  
 
             </ul>
           </div>
