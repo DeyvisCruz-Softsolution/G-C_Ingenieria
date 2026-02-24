@@ -1,14 +1,14 @@
 {
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "has": [
         {
           "type": "host",
           "value": "www.g-c-ingenieria.vercel.app"
         }
       ],
-      "destination": "https://g-c-ingenieria.vercel.app/:1",
+      "destination": "https://g-c-ingenieria.vercel.app/:path*",
       "permanent": true
     }
   ]
