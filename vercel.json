@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.g-c-ingenieria.vercel.app"
+        }
+      ],
+      "destination": "https://g-c-ingenieria.vercel.app/:1",
+      "permanent": true
+    }
+  ]
+}
