@@ -3,11 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import AdminLoginModal from './AdminLoginModal'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-
+const [openModal, setOpenModal] = useState(false)
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -45,7 +46,30 @@ export default function Navbar() {
           <Link href="#" className="hover:text-gold transition">Portafolio</Link>
           <Link href="#" className="hover:text-gold transition">Contáctanos</Link>
         </div>
-
+<button
+  onClick={() => setOpenModal(true)}
+  className="
+    relative
+    px-6
+    py-3
+    font-bold
+    text-white
+    uppercase
+    tracking-wider
+    rounded-lg
+    border-2
+    border-orange-500
+    bg-black
+    transition-all
+    duration-300
+    hover:scale-105
+    hover:bg-orange-500
+    hover:text-black
+    shadow-[0_0_10px_rgba(255,115,0,0.7),0_0_20px_rgba(255,115,0,0.5)]
+  "
+>
+  Cotización Administrativa
+</button>
         {/* Mobile Button */}
         <button
           onClick={() => setOpen(!open)}
@@ -63,6 +87,10 @@ export default function Navbar() {
           <Link href="#" className="block">Contáctanos</Link>
         </div>
       )}
+      <AdminLoginModal
+  isOpen={openModal}
+  onClose={() => setOpenModal(false)}
+/>
     </nav>
   );
 }

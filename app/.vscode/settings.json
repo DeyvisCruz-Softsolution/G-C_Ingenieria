@@ -1,5 +1,12 @@
 {
-  "css.validate": false,
+  "css.lint.unknownAtRules": "ignore",
   "scss.validate": false,
-  "less.validate": false
+  "less.validate": false,
+  "deno.enable": true,
+  "deno.unstable": true,
+  "deno.lint": true,
+  "deno.enablePaths": ["supabase/functions"],
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": true
+  }
 }
