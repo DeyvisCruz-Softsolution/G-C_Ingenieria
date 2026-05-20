@@ -1,7 +1,7 @@
 {
   "imports": {
     "sift": "https://deno.land/x/sift@0.6.6/mod.ts",
-    "resend": "https://esm.sh/resend@1.0.0",
-    "supabase": "https://esm.sh/@supabase/supabase-js@2.0.0"
+    "resend": "npm:resend@2.0.0",
+    "supabase": "npm:@supabase/supabase-js@2.37.0"
   }
 }
